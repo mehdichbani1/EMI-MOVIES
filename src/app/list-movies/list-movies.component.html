@@ -1,0 +1,14 @@
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <div style="display: flex;align-items: center; ">
+      <header style="text-align: left; font-weight:700; font-size: x-large;margin: 50px 5px; font-family: 'Bernard MT Condensed'; background-color: #0b5ed7; padding: 10px; color: white;">EMI-Movies</header>
+    <input type="text" name="search" [(ngModel)]="searchText" style="border-radius: 25px;height: 40px;width: 250px;padding: 0px 15px; background-color: white; border: 2px solid #0b5ed7;" placeholder="Search ...">
+  </div>
+  <ul style="display: flex;flex-direction: row;flex-wrap: wrap; justify-content: space-around;background-color: white; padding: 20px; border-radius: 20px;">
+    <div *ngFor="let movie of listmovies | filter:searchText ">
+      <app-movie-item [titre]="movie.title"
+                      [Id]="movie.id" [image]="movie.poster_path"
+                      [VoteAvg]="movie.vote_average">
+      </app-movie-item>
+    </div>
+  </ul>
+</div>

@@ -1,0 +1,44 @@
+.main-section {
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.main-section:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.left-side-product-box img {
+  width: 100%;
+}
+
+.price-pro {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.right-side-pro-detail {
+  padding: 20px;
+}
+
+.right-side-pro-detail h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.right-side-pro-detail h4 {
+  font-size: 16px;
+  color: #666;
+}
